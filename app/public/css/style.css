@@ -1,0 +1,52 @@
+.header {
+    padding: 8px;
+    margin: 5px;
+    margin-top: 20px;
+    background-color: #0c8d9e;
+    border-radius: 15px;
+}
+
+.tools {
+    padding: 10px;
+    margin: 10px;
+    background-color: #0c8d9e;
+    border-radius: 15px;
+    width: 80px;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    margin: 10px 5px 5px 0px;
+    background-color: #e0500d;
+    border-radius: 15px;
+    width: 80px;
+}
+
+#map  {
+    padding: 10px;
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: aqua;
+}
+
+#categories {
+    
+    display: inline-block;
+}
+
+.sale {
+    width: auto;
+}
+
+.labels {
+    background-color: #0c8d9e;
+    padding: 8px;
+    margin: 100px 50px 10px 50px;
+}
