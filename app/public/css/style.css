@@ -50,3 +50,31 @@ li {
     padding: 8px;
     margin: 100px 50px 10px 50px;
 }
+
+/* #header-splash {
+    position: relative;
+} */
+
+#title-splash {
+position: relative;
+   top: 12px;
+}
+
+#login-splash {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+#description {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#splash {
+    text-align: center;
+}
+
+.options {
+    margin-top: 20px;
+}
