@@ -1,7 +1,15 @@
-// Dependencies
-// =============================================================
+module.exports = function(sequelize, DataTypes) {
+    var User = sequelize.define("User", {
+        name: DataTypes.STRING,
+        email: DataTypes.STRING,
+        password: DataTypes.STRING
+    });
 
-// Sequelize (capital) references the standard library
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references my connection to the DB.
-var sequelize = require("../config/connection.js");
+    User.associate = function(models) {
+        User.hasMany(model.Sale, {
+            onDelete: "Cascade"
+        });
+    };
+
+    return User;
+};
