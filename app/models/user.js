@@ -1,12 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
-        name: DataTypes.STRING,
+        username: DataTypes.STRING,
         email: DataTypes.STRING,
         password: DataTypes.STRING
     });
 
     User.associate = function(models) {
-        User.hasMany(model.Sale, {
+        User.hasMany(model.Item, {
             onDelete: "Cascade"
         });
     };

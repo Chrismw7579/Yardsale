@@ -1,20 +1,18 @@
-
-
 module.exports = function(sequelize, DataTypes){
-    var Sale = sequelize.define("sale", {
+    var Item = sequelize.define("item", {
         // image: {type: sequelize.BLOB},
         categories: {type: sequelize.STRING},
         description: {type: sequelize.STRING}
     });
 
-    Sale.associate = function(models) {
-        Sale.belongsTo(models.User, {
+    Item.associate = function(models) {
+        Item.belongsTo(models.User, {
             foreignKey: {
                 allowNull: false
             }
         });
     };
 
-    return Sale;
+    return Item;
 };
 
