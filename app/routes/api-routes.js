@@ -4,7 +4,7 @@ const user = require("../models/user");
 
 
 
-Model.exports = function(app) {
+module.exports = function(app) {
 
     app.post("/api/post_user", (req, res) => {
         db.create({

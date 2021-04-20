@@ -1,8 +1,8 @@
 module.exports = function(sequelize, DataTypes){
-    var Item = sequelize.define("item", {
+    var Item = sequelize.define("Item", {
         // image: {type: sequelize.BLOB},
-        categories: {type: sequelize.STRING},
-        description: {type: sequelize.STRING}
+        categories: DataTypes.STRING,
+        description: DataTypes.TEXT
     });
 
     Item.associate = function(models) {
